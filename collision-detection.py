@@ -72,7 +72,7 @@ def main(): # our main function
 
         for eachRectangle in rectangles: #checking for each rectangle in rectangles
             if pygame.sprite.collide_rect(myRectangle,eachRectangle) == True and eachRectangle != myRectangle: #checking for collision with each rectangle
-                print 'collision detected! ' + str(myRectangle.rect.left) + ',' + str(myRectangle.rect.top) #printing when collsion is detected
+                print ('collision detected! ' + str(myRectangle.rect.left) + ',' + str(myRectangle.rect.top)) #printing when collsion is detected
 
         rectangles.update() #updating all our rectangles
 

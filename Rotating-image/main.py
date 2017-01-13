@@ -1,6 +1,6 @@
 import pygame
 import os
-import math
+from math import *
 from pygame import *
 
 pygame.init()
@@ -70,7 +70,7 @@ class PlayerShip(pygame.sprite.Sprite):
             pass
 
         if self.boosters == True:
-            self.movement = [-1*self.speed*math.sin(math.radians(self.angle)),-1*self.speed*math.cos(math.radians(self.angle))]
+            self.movement = [-1*self.speed*sin(radians(self.angle)),-1*self.speed*cos(radians(self.angle))]
         else:
             self.movement = [0,0]
 
